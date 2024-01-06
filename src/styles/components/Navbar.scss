@@ -1,0 +1,62 @@
+@import "../utils/variables.scss";
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 100px 0 100px;
+    @media screen and (max-width: 1200px) {
+        padding: 40px 50px 0 50px;
+    }
+    @media screen and (max-width: 991px) {
+          padding: 40px 20px 0 20px;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 20px 20px 0 20px;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: $primary-color;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 34px;
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
+            line-height: 17px;
+            text-transform: uppercase;
+        }
+    }
+    .navbar-link {
+        padding-right: 60px;
+        @media screen and (max-width: 767px) {
+            padding:0 10px 0 5px;
+            
+        }
+    }
+    .about {
+        padding-right: 0;
+    }
+    img{
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            max-width: 145px;
+            
+        }
+    }
+}
+
+nav {
+    .active {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,161 @@
+@import "../utils/variables.scss";
+
+/* CSS general for Collapse component */
+.collapse-drop {
+    background-color: $background-color-collapse;
+    transition: all 1s ease-in-out;
+    h3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $primary-color;
+        background-color: $primary-color;
+        padding-left:  10px;
+        font-weight: 500;
+        color: $background-color;
+        :hover {
+            cursor: pointer;
+        }
+    }
+    img {
+        height: 13px;
+        width: 24px;
+    }
+}
+
+.content {
+    font-weight: 400;
+    color: $primary-color;
+   p {
+    transition: display 2s ease-in-out;
+   }
+}
+
+
+.arrow {
+    transition: all 0.2s ease-in-out;
+}
+
+.arrow-open {
+    transform: rotate(0deg);
+}
+
+.arrow-close {
+    transform: rotate(180deg);
+}
+
+
+/* CSS Collapse pour la page About */
+
+.style-collapse-in-about-page {
+    .collapse-drop{
+        margin: 30px 110px 0 110px;
+        border-radius: 10px 10px 5px 5px;
+        h3 {
+            border-radius: 5px;
+            font-size: 24px;
+            line-height: 34px;
+            padding-right: 33px;
+        }
+    }
+    .content {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 34px;
+        padding: 27px 27px 20px 20px;
+    }
+    img {
+        padding: 16px 0;
+    }
+}
+
+/* CSS Collapse pour la page Lodging */
+
+.style-collapse-in-lodging-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .collapse-in-lodging {
+        margin: 0;
+        width: 47%;
+    }
+    h3 {
+        border-radius: 5px;
+        font-size: 18px;
+        line-height: 25px;
+        padding-right: 13px;
+    }
+    .collapse-drop{
+        border-radius: 10px 10px 5px 5px;
+    }
+    .content {
+        font-size: 18px;
+        line-height: 25px;
+        min-height: 249px;
+        padding: 30px 12px 0 20px;
+    }
+    img {
+        padding: 18px 0 19px 0;
+    
+    }
+    .details-equipments {
+        padding-bottom: 5px;
+    }
+}
+
+
+/* Responsive mobile */
+@media screen and (max-width: 767px) {
+    .style-collapse-in-about-page{
+        .collapse-drop{
+            margin: 20px 0 0 0;
+            img{
+                height: 7px;
+                width: 13px;
+            }
+            h3{
+                padding-left: 11px;
+                font-size: 13px;
+                line-height: 18px;
+                padding-right: 7px;
+            }
+            .content{
+                font-size: 12px;
+                line-height: 17px;
+                padding: 17px 7px 53px 11px;
+            }
+            img {
+                padding: 10px 0 11px 0;
+            }
+        }
+    }
+    .style-collapse-in-lodging-page{
+        flex-direction: column;
+        .collapse-in-lodging{
+            width: 100%;
+            padding: 10px 10px 10px 0;
+        }
+        .collapse-drop{
+            h3 {
+                height: 30px;
+                font-size: 13px;
+                line-height: 18px;
+                padding-right: 7px;
+                border-radius: 5px;
+                padding-left: 11px;
+            }
+            img {
+                height: 7px;
+                width: 13px;
+            }
+            .content{
+                font-size: 12px;
+                line-height: 17px;
+                padding: 17px 7px 0 11px;
+                min-height: 144px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,38 @@
+@import "../utils/variables.scss";
+
+.error {
+    text-align: center;
+    color: $primary-color;
+    h2 {
+        font-weight: 700;
+        font-size: 288px;
+        line-height: 410px;
+        padding-top: 139px;
+        @media screen and (max-width: 767px) {
+            font-size: 96px;
+            line-height: 136px;
+            padding-top: 195px;
+        }
+    }
+    p {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 51px;
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+    .link {
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        padding-top: 182px;
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 19px;
+            padding-top: 133px;
+        }
+    }
+}
