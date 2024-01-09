@@ -64,7 +64,7 @@ function Gallery(props) {
 }
 
 Gallery.propTypes = {
-  pictures: PropTypes.string.isRequired,
+  pictures: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired
 };
 

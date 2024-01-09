@@ -6,7 +6,7 @@ import arrowopen from '../assets/arrowopen.png';
 function Collapse(props) {
   // définition local state isOpen
   const [isOpen, setIsOpen] = useState(props.open !== undefined ? props.open : false);
-  // crétion d'un évenement au click
+  // création d'un évenement au click
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
@@ -22,19 +22,20 @@ function Collapse(props) {
           alt="show content"
         />
       </h3>
-      {isOpen && <div className="content">{props.content}</div>}
-      {/* <div className={isOpen ? 'content-show' : 'content-parent'}>
-        <div className="content">
-          <p>{props.content}</p>
+      {/* {isOpen && (
+        <div ref={myRef} className="content">
+          {props.content}
         </div>
-      </div> */}
+      )} */}
+      <div className={isOpen ? 'content show' : 'content'}>{props.content}</div>
     </div>
   );
 }
 
 Collapse.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.element.isRequired,
+  // content: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
   open: PropTypes.bool
 };
 

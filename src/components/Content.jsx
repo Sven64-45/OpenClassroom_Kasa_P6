@@ -33,7 +33,7 @@ Features.propTypes = {
   location: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   host: PropTypes.string.isRequired,
-  picture: PropTypes.string.isRequired,
+  picture: PropTypes.array.isRequired,
   rating: PropTypes.number.isRequired
 };
 
