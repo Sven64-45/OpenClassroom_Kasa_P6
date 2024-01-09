@@ -31,10 +31,10 @@ function Features(props) {
 Features.propTypes = {
   title: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  host: PropTypes.string.isRequired,
-  picture: PropTypes.array.isRequired,
-  rating: PropTypes.number.isRequired
+  tag: PropTypes.array.isRequired,
+  host: PropTypes.object.isRequired,
+  picture: PropTypes.string.isRequired,
+  rating: PropTypes.array.isRequired
 };
 
 export default Features;
