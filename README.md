@@ -1,17 +1,17 @@
-# Projet 6 Kasa
+# Projet Kasa
 
-Optimisation, Debuggage et Amélioration du SEO du Site d'une Photographe
-
-## Description
-
-Ce projet vise à optimiser, déboguer et améliorer le référencement du site web d'une photographe afin d'améliorer ses performances, l'expérience utilisateur et sa visibilité sur les moteurs de recherche. En identifiant et en résolvant les problèmes liés à l'optimisation du code, à la correction des bugs, ainsi qu'en mettant en place des techniques de référencement, nous pouvons nous assurer que le site fonctionne de manière fluide, efficace et qu'il est bien positionné dans les résultats de recherche.
+Le projet Kasa est un projet d'OpenClassroom qui consiste à créer le frontend d'un site de réservation de chambres en utilisant React.js.
 
 ## Fonctionnalités
 
-- Amélioration du SEO un utilisant les métadonnées au format schema.
-- Optimisation du score Lighthouse de performance
-- Debug des fonctionnalités en Javascript
+- Affichage des chambres disponibles
+- Affichage d'une FAQ
+- Gestion des avis et commentaires sur les chambres
+- Création et gestion de différent component React.js
 
-## Contributions
+## Technologies utilisées
 
-- Création d'un script Bash pour automatiser l'optimisation des images (resizing et conversion webp)
+- React.js
+- HTML
+- CSS
+- JavaScript
